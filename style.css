@@ -1,0 +1,163 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: Arial, sans-serif;
+}
+
+/* LOGOS */
+.logos {
+  background-color: black;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+/* TEXTO PRINCIPAL */
+#textomain {
+  text-align: center;
+  background-color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#textomain p {
+  color: aliceblue;
+  font-size: 30px;
+  margin-top: -45px;
+  margin-bottom: 30px;
+}
+
+/* IMAGEM MCCAMS */
+.mccams-container {
+  text-align: center;
+  padding: 5px 0 20px 0; /* pequeno espaço antes e depois */
+}
+
+#mccams {
+  width: 350px;
+  margin-top: 0;
+}
+
+/* CONTATOS */
+.contacts {
+  
+  padding: 30px;
+}
+
+.icones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.contato-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 10px;
+}
+
+.contato-link i {
+  font-size: 50px;
+}
+
+.contato-link span {
+  font-size: 30px;
+  color: white;
+}
+
+/* Cores específicas */
+.contato-link i.fa-whatsapp {
+  color: #25D366;
+}
+
+.contato-link i.fa-instagram {
+  color: #E1306C;
+}
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+  margin-top: 40px;
+}
+/* RESPONSIVIDADE GERAL */
+@media (max-width: 1024px) {
+  .logos {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #textomain p {
+    font-size: 26px;
+  }
+
+  .icones {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contato-link {
+    justify-content: center;
+  }
+
+  .contato-link i {
+    font-size: 40px;
+  }
+
+  .contato-link span {
+    font-size: 24px;
+  }
+
+  #mccams {
+    width: 150px;
+  }
+
+  .footer {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  .logos img {
+    width: 80% !important;
+  }
+
+  #textomain p {
+    font-size: 22px;
+    padding: 0 10px;
+  }
+
+  .contato-link i {
+    font-size: 35px;
+  }
+
+  .contato-link span {
+    font-size: 20px;
+  }
+
+  .footer {
+    padding: 15px 10px;
+    font-size: 12px;
+  }
+
+  .social-icons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
